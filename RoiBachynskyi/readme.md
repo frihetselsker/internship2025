@@ -84,3 +84,14 @@
 - Tried to debug it using Arduino Uno as a slave, but it didn't work out. Then, I thought the problem was in USART connection with the computer, but sadly, not.
 - Denis told me to look at `lpc-hal`, George suggesed looking at C-implementation
 - Helped Irina with her `nxp-pac` and `chiptool` (unfortunately, it doesn't have any documentation)
+
+## 24 July 2025
+- Finally, I fixed my USART so that I can transmit bits using wires, not loopback mode. Thanks to Alex!
+- The problem was in `IOCON` register, it lacked full configuration
+- Left earlier because I had an appointment to a dentist
+
+## 25 July 2025
+- Read `embassy-rp`'s implementation of USART to understand the ownership rules and how to write driver implementation
+- Tried to help Denis with his SPI, but there's still something we both don't see
+- For the whole period I had problems with flashing of the NXP board: every time I restarted it, `probe-rs` didn't flash the board. Them problem was fixed by someone, but the change has not been used by the main branch
+- Implemented baudrate configuration for USART
