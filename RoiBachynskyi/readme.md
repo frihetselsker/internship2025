@@ -107,6 +107,12 @@
 - Came up with a very simple idea: just own the pins like `embassy` does so that it is prohibited to use the same Flexcomm twice.
 
 ## 30 July 2025
-- Started to write the driver outline
+- Started to write the driver outline from scratch once again
 - I started with `impl_instance!()` to ensure that every USART has appropriate registers and can be configured,but it was a bit hard to work with `macro_rules`, but George helped me
-- Wrote some constructors and main functions for USART TX and USART RX 
+- Wrote some constructors and main functions for USART TX and USART RX
+
+## 31 July 2025
+- I tried to write the code so that USART struct is as generic as possible
+- However, because of Rust safety rules, it cannot deduce the used PAC type in USART struct making using of registers there impossible
+- That's why I moved all the logic into the generic `Instance`(I feel like when I make a PR, I'll have many comments, though)
+- Almost finished the implementation of blocking USART (hopefully)
