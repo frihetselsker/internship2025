@@ -96,7 +96,6 @@
 - For the whole period I had problems with flashing of the NXP board: every time I restarted it, `probe-rs` didn't flash the board. Them problem was fixed by someone, but the change has not been used by the main branch
 - Implemented baudrate configuration for USART
 
-
 ## 28 July 2025
 - Wrote all the blocking functions for USART, so that an array of bytes can be either read or written.
 - Had problems with reading, but it was so simple: `fifordnopop` should have been used to check the FIFO state instead of `fiford`, every reading of `fiford` register entails data loss
@@ -114,5 +113,11 @@
 ## 31 July 2025
 - I tried to write the code so that USART struct is as generic as possible
 - However, because of Rust safety rules, it cannot deduce the used PAC type in USART struct making using of registers there impossible
-- That's why I moved all the logic into the generic `Instance`(I feel like when I make a PR, I'll have many comments, though)
+- That's why I moved all the logic into the generic `Instance` (I feel like when I make a PR, I'll have many comments, though)
 - Almost finished the implementation of blocking USART (hopefully)
+
+## 1 August 2025
+- Finished blocking USART implementation, introduced `usart_blocking.rs` as an example
+- Talked with George about further implementation of asynchronous mode with interrupts
+- Started my second [pull request](https://github.com/embassy-rs/embassy/pull/4497)
+- I spent much time to implement it, but there are still a lot of things to do. However, I like it :)
