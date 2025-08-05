@@ -121,3 +121,10 @@
 - Talked with George about further implementation of asynchronous mode with interrupts
 - Started my second [pull request](https://github.com/embassy-rs/embassy/pull/4497)
 - I spent much time to implement it, but there are still a lot of things to do. However, I like it :)
+
+## 4 August 2025
+- Had 24 comments from George and around 7 comments from the American
+- Resolved all their observations
+- A strange bug happened to me yesterday: while working on the improvements, Denis asked me to help him with blocked device. I ran `cargo run` with blinky example, then used LinkFlasher, restarted my PC, and all the contents of a folder where `embassy` fork was disappeared. Unfortunately, I didn't save my code, so I wrote what I remembered once again.
+> Do more backups.
+- Helped Irina with synchronizing her fork with the upstream and learnt how to do it using `git` in terminal
