@@ -125,6 +125,19 @@
 ## 4 August 2025
 - Had 24 comments from George and around 7 comments from the American
 - Resolved all their observations
+- Learnt what is `critical_section`
 - A strange bug happened to me yesterday: while working on the improvements, Denis asked me to help him with blocked device. I ran `cargo run` with blinky example, then used LinkFlasher, restarted my PC, and all the contents of a folder where `embassy` fork was disappeared. Unfortunately, I didn't save my code, so I wrote what I remembered once again.
 > Do more backups.
 - Helped Irina with synchronizing her fork with the upstream and learnt how to do it using `git` in terminal
+
+## 5 August 2025
+- Started to explore interrupts and the logic behind them in USART
+- Started to read about DMA, but George advised starting with usage of interrupts 
+- Spent a lot of time to understand how to harness the interrupts 
+
+
+## 6 August 2025
+- Continued to 'fight' interrupts, they're not as intuitive as I thought, and they need to be harnessed. For some reason, they fired every time I unmasked them. I guess it's because of defmt lagging
+- Fixed a bug in my PR with `set_baudrate` function, now it doesn't panic
+- Learnt what is the ring buffer
+- Started to read `buffered.rs` in `embassy-rp` and I'm going to use it as a skeleton for my code
