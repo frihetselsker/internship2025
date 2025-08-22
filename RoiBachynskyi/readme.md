@@ -209,3 +209,8 @@
 - I took a day-off, I needed some sleep
 - Started implementing the function from the [post](https://os.phil-opp.com/testing/), but for some reason, QEMU is not opening when calling `cargo test`
 - I'm planning to open an issue and ask Andrei Dragota about it 
+
+## 22 August 2025
+> TXLVL interrupt fires whenever the number of bytes in the TX FIFO is **less or equal** the threshold programmed in FIFOTRIG.TXLVL.
+> RXLVL interrupt fires whenever the number of bytes in RX FIFO is **more or equal** the threshold programmed in FIFOTRIG.RXLVL.
+- Found this key thing in implementing an asynchronous mode for USART
