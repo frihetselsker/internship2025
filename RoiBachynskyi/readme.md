@@ -140,4 +140,28 @@
 - Continued to 'fight' interrupts, they're not as intuitive as I thought, and they need to be harnessed. For some reason, they fired every time I unmasked them. I guess it's because of defmt lagging
 - Fixed a bug in my PR with `set_baudrate` function, now it doesn't panic
 - Learnt what is the ring buffer
-- Started to read `buffered.rs` in `embassy-rp` and I'm going to use it as a skeleton for my code
+- Started to read `buffered.rs` in `embassy-rp` and I'm going to use it as a skeleton for my code.
+
+## 7 August 2025
+- Went to the family doctor to get a paper for the IP Workshop
+
+## 8 August 2025
+- Arrived in Târgu Mureș to help as a volunteer
+
+## 9 August 2025
+- Andrei Dragota and I printed a lot of posters and pasted them on the walls
+- Carried some chairs, desks, other stuff at the university 
+
+## 10 August 2025
+- New posters were pasted :)
+- Helped Laur with cabling and routers
+
+## 11 August 2025
+- Enroled in Autonomous cars course sponsored by NXP
+- Assembled a car and made a logo for our team in Fusion
+- Participated in IPSEC with the team of Owls, helped to build a bridge from noodle and tape
+
+## 12 August 2025
+- Learnt how to solder, I really loved doing this, it was like a meditation for me
+- Took a look at the code for the car and started to figure it out
+- Started to explain my junior colleague how processor works 
