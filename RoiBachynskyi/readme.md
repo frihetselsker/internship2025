@@ -159,9 +159,53 @@
 ## 11 August 2025
 - Enroled in Autonomous cars course sponsored by NXP
 - Assembled a car and made a logo for our team in Fusion
-- Participated in IPSEC with the team of Owls, helped to build a bridge from noodle and tape
 
 ## 12 August 2025
 - Learnt how to solder, I really loved doing this, it was like a meditation for me
-- Took a look at the code for the car and started to figure it out
-- Started to explain my junior colleague how processor works 
+- Finished my [second PR](https://github.com/embassy-rs/embassy/pull/4497) (it's the part of the [issue](https://github.com/orgs/WyliodrinEmbeddedIoT/projects/1/views/1?pane=issue&itemId=116432065&issue=WyliodrinEmbeddedIoT%7Cembassy%7C3)) 
+
+## 13 August 2025
+- My [PR](https://github.com/embassy-rs/embassy/pull/4497) was merged at last. While I had nothing to do in my free time, I decided to start Philipp Oppermann's guide called "[Writing an OS in Rust](https://os.phil-opp.com/)"
+- Completed the [first post](https://os.phil-opp.com/freestanding-rust-binary/) of OS Guide
+- Started exploring code for the car. Teo uploaded the code on GitHub.
+- Started to explain my junior colleague how processor works, how `async` works, even opened [lecture notes](pmrust.pages.upb.ro)
+
+## 14 August 2025
+- Started reading Andrew Tannenbaum's book "Modern Operating Systems"
+- Completed the [second post](https://os.phil-opp.com/minimal-rust-kernel/) of the OS Guide
+
+## 15 August 2025
+- Worked on code for the car
+- Went insane because it was so slow and it didn't follow the line while everyone around made it
+
+## 16 August 2025
+- Our car was following lines, yay
+- But I wanted to make it smoother and faster at the same time
+- I started experimenting, but because of this wheels of the car were flying :), my colleagues didn't appreciate this
+- I even created issues, but I overcomplicated things
+
+## 17 August 2025
+- Made two significant changes: one, replaced slope `m` with `atan2`, two, I used avarage instead of summation
+- It was a miracle for me, the car went so perfectly
+
+## 18 August 2025
+- There were some problems with a camera, the code didn't work, I started to debug it, but in reality, the problem was in SCL and SDA: they were touching each other. We killed a camera :)
+- I started experimenting again: playing with speeds of outer and inner wheels to make the car faster on the corners, decreasing the whole speed before the turn
+- But the car didn't work well, and my teammate made a very wise decision that made a huge impact: I wasn't allowed to to make any experiments, because our car as already OK (I didn't see that, I was winding, the reason will be described later).
+- I was mad because our rival was faster, but I refrained and kind of gave up because I knew that if I do new things and break what existed, I won't be able to fix it even having [version control](https://github.com/frihetselsker/ipw-autonomous-cars)
+- Started the [third post](https://os.phil-opp.com/vga-text-mode/) of the OS guide
+
+## 19 August 2025
+- Completed the [third post](https://os.phil-opp.com/vga-text-mode/) of the OS guide
+- Tested the car several times, then we changed the location where the race was supposed to be
+- The car got blind, but we fixed it
+- Junior colleagues fixed the stuck servo motor and our car was perfect
+- We won the first place at NXP Cup-like event, yay :) 
+
+## 20 August 2025
+- Read the [fourth post](https://os.phil-opp.com/testing/) while coming home
+
+## 21 August 2025
+- I took a day-off, I needed some sleep
+- Started implementing the function from the [post](https://os.phil-opp.com/testing/), but for some reason, QEMU is not opening when calling `cargo test`
+- I'm planning to open an issue and ask Andrei Dragota about it 
