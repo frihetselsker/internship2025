@@ -214,3 +214,33 @@
 > TXLVL interrupt fires whenever the number of bytes in the TX FIFO is **less or equal** the threshold programmed in FIFOTRIG.TXLVL.
 > RXLVL interrupt fires whenever the number of bytes in RX FIFO is **more or equal** the threshold programmed in FIFOTRIG.RXLVL.
 - Found this key thing in implementing an asynchronous mode for USART
+- Started to read about DMA and its usage in USART
+- Opened an [issue](https://github.com/phil-opp/blog_os/issues/1433) on the GitHub repository of the OS guide
+
+## 25 August 2025
+- Attented the 1st day of 'FutureShapers' summer school organized by Politehnica, Honeywell, INSA and EELISA
+- Started resarching about capabilities of asyncronous programming on Arduino Uno
+- In fact, this board can handle this and there is a library called [AceRoutine](https://github.com/bxparks/AceRoutine)
+- I really admired cooperative tasks on PM and decided to use this Embassy-like library
+
+## 26 August 2025
+- Philipp Oppermann answered to my question and resolved my issue.
+- I worked on the sensors for the summer school and eventually connected two boards together using `SoftwareSerial`
+- Learnt how to organize code on Arduino projects using headers (`.h`) and source files (`.cpp`)
+
+## 27 August 2025
+- Wrote asynchronous code for all the sensors, communication and the menu
+- However, it is easier to write code for Embassy
+
+## 28 August 2025
+- Got a message from Irina that we were moving to `nxp-pac`
+- Our team failed the presentation and didn't get the podium place.
+- The communication channels collapsed and our plan was not implemented
+
+## 29 August 2025
+- Back to work
+- Learnt differences between PACs made using `svd2rust` and `chiptool`
+- Made some fixes at `Cargo.toml` for `embassy-nxp`
+- Started rewriting GPIO section
+## 30 August 2025
+- Continued working on GPIO, I worked a little bit
