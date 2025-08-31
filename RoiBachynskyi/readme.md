@@ -244,3 +244,7 @@
 - Started rewriting GPIO section
 ## 30 August 2025
 - Continued working on GPIO, I worked a little bit
+## 31 August 2025
+- Fixed GPIO code
+- Almost fixed PINT code, still don't know how to rewrite interrupts in this case
+- Opened a [PR](https://github.com/i509VCB/nxp-pac/pull/10) to NXP-PAC, enums should be merged
