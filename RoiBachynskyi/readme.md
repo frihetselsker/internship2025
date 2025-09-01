@@ -242,9 +242,16 @@
 - Learnt differences between PACs made using `svd2rust` and `chiptool`
 - Made some fixes at `Cargo.toml` for `embassy-nxp`
 - Started rewriting GPIO section
+  
 ## 30 August 2025
 - Continued working on GPIO, I worked a little bit
+  
 ## 31 August 2025
 - Fixed GPIO code
 - Almost fixed PINT code, still don't know how to rewrite interrupts in this case
 - Opened a [PR](https://github.com/i509VCB/nxp-pac/pull/10) to NXP-PAC, enums should be merged
+  
+## 1 September 2025
+- Finally fixed PINT code
+- Figured out how to rewrite USART code better
+- Figured out how to fix the problem with a linker together with Irina
