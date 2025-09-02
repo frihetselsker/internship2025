@@ -255,3 +255,4 @@
 - Finally fixed PINT code
 - Figured out how to rewrite USART code better
 - Figured out how to fix the problem with a linker together with Irina
+- However, now the board faults, and we have no idea why. I'll ask George once he comes
