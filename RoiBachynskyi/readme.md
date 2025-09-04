@@ -230,7 +230,7 @@
 
 ## 27 August 2025
 - Wrote asynchronous code for all the sensors, communication and the menu
-- However, it is easier to write code for Embassy
+- However, it is easier to write code for Embassy devices that to Arduino
 
 ## 28 August 2025
 - Got a message from Irina that we were moving to `nxp-pac`
@@ -249,10 +249,28 @@
 ## 31 August 2025
 - Fixed GPIO code
 - Almost fixed PINT code, still don't know how to rewrite interrupts in this case
-- Opened a [PR](https://github.com/i509VCB/nxp-pac/pull/10) to NXP-PAC, enums should be merged
+- Opened a [PR](https://github.com/i509VCB/nxp-pac/pull/10) to `nxp-pac`, enums should be merged
+- Learnt how to use `git branch` and `git checkout`. Just read the documentation with a simple command like `man git-branch` 
   
 ## 1 September 2025
 - Finally fixed PINT code
 - Figured out how to rewrite USART code better
 - Figured out how to fix the problem with a linker together with Irina
 - However, now the board faults, and we have no idea why. I'll ask George once he comes
+- Learnt how to use `git reset`
+
+## 2 September 2025
+- Adrian helped me with debugging. The problem was really simple: instead of modifying `SYSCON` I was writing to it nullifying other fields that shouldn't be zero
+- Started rewriting my USART code, there was such a mess there
+- I had an idea: what if I use two macros that will return the code based on the USART register that I can store in the `Info` struct for pin and clock configuration?
+- For this, I merged again some fields/registers in `nxp-pac` for Flexcomms. Also, i509VCB told to merge all the `piox_y` registers, it has also reduced the code size in GPIO
+- My idea for USART was really bad, I had a lot of repeating code which is unaccepted in terms of embedded development. I should ask George about it, because now I have no ideas.
+
+## 3 September 2025
+- Thanks to George, I came up with new ideas. New merges of fields/registers in `nxp-pac` and some helping functions for choosing the correct configuration in `FLEXCOMMx` and `SYSCON`
+- Finally rewrote USART code, now it's much better than before. Still have a visibility issue from `Info` struct: It's more private than the trait `SealedInstance`
+
+## 4 September 2025
+- Yay, I finished it. However, FLEXCOMM3 still doesn't work, there is fishy with pins, because loopback mode does work. George also has no idea why.
+- Another attempt to start wrtiting asynchronous code for USART, but before doing this, I need to implement DMA controller, it should be much better than simple interrupts
+- Also, it will save time to others who will implement async code for their peripherals
