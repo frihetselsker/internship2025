@@ -272,5 +272,17 @@
 
 ## 4 September 2025
 - Yay, I finished it. However, FLEXCOMM3 still doesn't work, there is fishy with pins, because loopback mode does work. George also has no idea why.
-- Another attempt to start wrtiting asynchronous code for USART, but before doing this, I need to implement DMA controller, it should be much better than simple interrupts
+- Another attempt to start writing asynchronous code for USART, but before doing this, I need to implement DMA controller, it should be much better than simple interrupts
 - Also, it will save time to others who will implement async code for their peripherals
+
+## 5 September 2025
+- Read documentation about DMA trying to understand what to do with it
+- Started to watch Ben Eater's [playlist](https://youtube.com/playlist?list=PLowKtXNTBypFbtuVMUVXNR0z1mu7dp7eH&feature=shared)
+
+## 6 September 2025
+- Tried to merge all the PIOs registers for `nxp-pac`, as Vince asked, but I couldn't because they were not identical
+
+## 7 September 2025 
+- The solution was to use the field `check` with value `NoCheck`, the chiptool merged what I needed
+- Then, there was one field absent, I added it manually, it was so easy
+- My [PR](https://github.com/i509VCB/nxp-pac/pull/10) was merged
