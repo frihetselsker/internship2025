@@ -298,14 +298,14 @@
 ## 10-11 September 2025
 - Day-off
 
-# 12 September 2025
+## 12 September 2025
 - Implemented DMA transfers with interrupts
 - IT WORKED!!! I'm surprised how easy it was
 - Learnt `Mutex` and `RefCell` that help managing static mutable variables
 
-# 13 September 2025
+## 13 September 2025
 - The [PR](https://github.com/embassy-rs/embassy/pull/4647) was merged! Yay!
 
-# 14 September 2025
+## 14 September 2025
 - Formated my code in the repo for experiments
 - Almost wrote the code for the DMA controller in `Embassy`
