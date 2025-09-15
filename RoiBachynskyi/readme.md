@@ -289,10 +289,11 @@
 
 ## 8 September 2025
 - Figured out how to write DMA, how to put DMA Descriptor Table into SRAM
-- Opened a new [PR]()
+- Opened a new [PR](https://github.com/embassy-rs/embassy/pull/4647)
 
 ## 9 September 2025
-- Figured out how to write DMA, how to 
+- Resolved some comments from i509VCB and helped Irina with rebasing
+- Read the documentation once again
 
 ## 10-11 September 2025
 - Day-off
@@ -301,6 +302,9 @@
 - Implemented DMA transfers with interrupts
 - IT WORKED!!! I'm surprised how easy it was
 - Learnt `Mutex` and `RefCell` that help managing static mutable variables
+
+# 13 September 2025
+- The [PR](https://github.com/embassy-rs/embassy/pull/4647) was merged! Yay!
 
 # 14 September 2025
 - Formated my code in the repo for experiments
