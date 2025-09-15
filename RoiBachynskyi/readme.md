@@ -286,3 +286,22 @@
 - The solution was to use the field `check` with value `NoCheck`, the chiptool merged what I needed
 - Then, there was one field absent, I added it manually, it was so easy
 - My [PR](https://github.com/i509VCB/nxp-pac/pull/10) was merged
+
+## 8 September 2025
+- Figured out how to write DMA, how to put DMA Descriptor Table into SRAM
+- Opened a new [PR]()
+
+## 9 September 2025
+- Figured out how to write DMA, how to 
+
+## 10-11 September 2025
+- Day-off
+
+# 12 September 2025
+- Implemented DMA transfers with interrupts
+- IT WORKED!!! I'm surprised how easy it was
+- Learnt `Mutex` and `RefCell` that help managing static mutable variables
+
+# 14 September 2025
+- Formated my code in the repo for experiments
+- Almost wrote the code for the DMA controller in `Embassy`
