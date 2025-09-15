@@ -309,3 +309,8 @@
 ## 14 September 2025
 - Formated my code in the repo for experiments
 - Almost wrote the code for the DMA controller in `Embassy`
+
+## 15 September 2025
+- Finished DMA controller and checked `Future` for it
+- Wrote async `write`
+- Started async `read`
