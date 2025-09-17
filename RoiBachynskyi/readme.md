@@ -314,3 +314,16 @@
 - Finished DMA controller and checked `Future` for it
 - Wrote async `write`
 - Started async `read`
+
+## 16 September 2025
+- Finished async `read`
+- Learnt more about `embassy_hal_internal:: interrupt_mod!`
+- Encountered one error related to this macro, George helped to fix it
+- Learnt more about binding interrupts 
+
+## 17 September 2025
+- Tested interrupts 
+- Discussed the PLL clock issue with Denis
+- Finished the USART code
+- Opened a new [PR](), but encountered a problem related to module `chip::interrupt`. it exists only in lpc55 trait code, but not at others. I need to find a way that satisfies both builder and rustfmt
+
