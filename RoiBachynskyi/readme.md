@@ -325,5 +325,5 @@
 - Tested interrupts 
 - Discussed the PLL clock issue with Denis
 - Finished the USART code
-- Opened a new [PR](), but encountered a problem related to module `chip::interrupt`. it exists only in lpc55 trait code, but not at others. I need to find a way that satisfies both builder and rustfmt
+- Opened a new [PR](https://github.com/embassy-rs/embassy/pull/4677), but encountered a problem related to module `chip::interrupt`. it exists only in lpc55 trait code, but not at others. I need to find a way that satisfies both builder and rustfmt
 
