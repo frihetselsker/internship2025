@@ -327,3 +327,5 @@
 - Finished the USART code
 - Opened a new [PR](https://github.com/embassy-rs/embassy/pull/4677), but encountered a problem related to module `chip::interrupt`. it exists only in lpc55 trait code, but not at others. I need to find a way that satisfies both builder and rustfmt
 
+## 18 September 2025
+- Fixed the CI problem, it was just a little space that failed a whole test, thanks to Adrian, it was fixed fast
