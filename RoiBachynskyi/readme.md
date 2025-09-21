@@ -326,6 +326,19 @@
 - Discussed the PLL clock issue with Denis
 - Finished the USART code
 - Opened a new [PR](https://github.com/embassy-rs/embassy/pull/4677), but encountered a problem related to module `chip::interrupt`. it exists only in lpc55 trait code, but not at others. I need to find a way that satisfies both builder and rustfmt
+- George reviewed the code and approved it
 
 ## 18 September 2025
 - Fixed the CI problem, it was just a little space that failed a whole test, thanks to Adrian, it was fixed fast
+- Helped Adrian with his `reshuffle-apps` problem 
+- Was assigned to a new issue: PWM in Embassy
+- Read the documnetation, but am still puzzled a bit
+
+## 19 September 2025
+- Found out what mathes and captures are, I didn't know that PWM can be so powerful. Finite state machines are even possible here, but I'm not sure how to give a convenient API for a user
+- Almost wrote the first code
+## 20 September 2025
+- Worked a bit
+- Firstly, it was not counting at all, I made a simple square signal
+- It turned out that, by default, the counter is halted and it should be released in initialization
+- The current problem is that whenever the counter reaches the top, it stops at 0 and doesn't continue
