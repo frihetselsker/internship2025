@@ -4,7 +4,7 @@
 - Made a walkthrough of Tour of Rust and refreshed what I learnt during the labs (for, if, match, Option, Result, etc.)
 - Read more Ownership and Borrowing which I didn't understand during the labs
 - Explored Smart Pointers
-- Explored the difference between ```&str``` and ```String```
+- Explored the difference between `&str` and `String`
 
 ## 24 June 2025
 - Completed the MA Lab 0 to solidify knowledge gained yesterday
@@ -31,7 +31,7 @@
 ![Rustlings Fe-nish](https://github.com/user-attachments/assets/0c2fa26a-1e5a-485a-a8a6-1218551ee443)
 
 - Moved to the lab computer and installed Ubuntu
-- Installed i3 window manager to start learnign no-mouse way of using the computer and OS
+- Installed i3 window manager to start learning no-mouse way of using the computer and OS
 - Chose my [first issue](https://github.com/orgs/WyliodrinEmbeddedIoT/projects/1?pane=issue&itemId=116432064&issue=WyliodrinEmbeddedIoT%7Cembassy%7C4)
 - Flashed the NXP board
 
@@ -93,7 +93,7 @@
 ## 25 July 2025
 - Read `embassy-rp`'s implementation of USART to understand the ownership rules and how to write driver implementation
 - Tried to help Denis with his SPI, but there's still something we both don't see
-- For the whole period I had problems with flashing of the NXP board: every time I restarted it, `probe-rs` didn't flash the board. Them problem was fixed by someone, but the change has not been used by the main branch
+- For the whole period I had problems with flashing of the NXP board: every time I restarted it, `probe-rs` didn't flash the board. Then problem was fixed by someone, but the change has not been used by the main branch
 - Implemented baudrate configuration for USART
 
 ## 28 July 2025
@@ -123,7 +123,7 @@
 - I spent much time to implement it, but there are still a lot of things to do. However, I like it :)
 
 ## 4 August 2025
-- Had 24 comments from George and around 7 comments from the American
+- Had 24 comments from George and around 7 comments from i509VCB
 - Resolved all their observations
 - Learnt what is `critical_section`
 - A strange bug happened to me yesterday: while working on the improvements, Denis asked me to help him with blocked device. I ran `cargo run` with blinky example, then used LinkFlasher, restarted my PC, and all the contents of a folder where `embassy` fork was disappeared. Unfortunately, I didn't save my code, so I wrote what I remembered once again.
@@ -342,3 +342,20 @@
 - Firstly, it was not counting at all, I made a simple square signal
 - It turned out that, by default, the counter is halted and it should be released in initialization
 - The current problem is that whenever the counter reaches the top, it stops at 0 and doesn't continue
+
+## 21 September 2025
+- The problem was in registers `match` and `matchrel`. Every time the counter faces a limit event, it needs to reload value for the match causing its reset.
+- Now PWM works really well and I cane set the duty cycle
+
+## 22 September 2025
+- Found some registers and fields that can be merged in `nxp-pac`
+- A small tutorial how to generate a PAC using Embassy's `chiptool`:
+```
+cargo install chiptool
+cargo install svd2rust
+cargo install form
+```
+- To pull the SVDs from the Git submodule
+```
+git submodule update --checkout 
+```
