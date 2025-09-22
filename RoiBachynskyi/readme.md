@@ -361,5 +361,5 @@ git submodule update --checkout
 ```
 - To generate a new version of PAC:
 ```
-cargo run -p generate -- LPC55S69  
+cargo run -p generator -- LPC55S69  
 ```
