@@ -359,3 +359,7 @@ cargo install form
 ```
 git submodule update --checkout 
 ```
+- To generate a new version of PAC:
+```
+cargo run -p generate -- LPC55S69  
+```
