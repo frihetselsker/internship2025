@@ -351,7 +351,7 @@
 - Found some registers and fields that can be merged in `nxp-pac`
 - A small tutorial how to generate a PAC using Embassy's `chiptool`:
 ```
-cargo install chiptool
+cargo install --git https://github.com/embassy-rs/chiptool --locked
 cargo install svd2rust
 cargo install form
 ```
